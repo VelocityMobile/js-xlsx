@@ -2,6 +2,7 @@
 /* vim: set ts=2: */
 /*jshint -W041 */
 /*jshint funcscope:true, eqnull:true */
+define(['jszip'], function (JSZip) {
 var XLSX = {};
 (function make_xlsx(XLSX){
 XLSX.version = '0.8.0';
@@ -11652,3 +11653,7 @@ XLSX.CFB = CFB;
 XLSX.SSF = SSF;
 })(typeof exports !== 'undefined' ? exports : XLSX);
 var XLS = XLSX;
+
+return XLSX;
+
+});
